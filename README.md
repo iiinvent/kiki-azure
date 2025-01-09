@@ -52,7 +52,7 @@ cp .env.example .env.local
 1. Start the agent
 
 ```bash
-pnpm exec tsx src/multimodal_agent.ts start
+pnpm exec tsx src/multimodal_agent.ts start or pnpm run minimal start
 ```
 
 ## Usage
