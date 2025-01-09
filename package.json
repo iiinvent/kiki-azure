@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "livekit-agents-examples",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "clean:build": "pnpm clean && pnpm build",
+    "lint": "eslint -f unix \"src/**/*.ts\"",
+    "minimal": "pnpm exec tsx src/multimodal_agent.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@livekit/agents": "^0.6.0",
+    "@livekit/agents-plugin-openai": "^0.7.3",
+    "zod": "^3.23.8"
+  },
+  "version": "0.1.0"
+}
